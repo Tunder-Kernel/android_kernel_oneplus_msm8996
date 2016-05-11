@@ -1,6 +1,6 @@
 VERSION = 3
 PATCHLEVEL = 18
-SUBLEVEL = 31
+SUBLEVEL = 33
 EXTRAVERSION =
 NAME = Shuffling Zombie Juror
 
@@ -696,7 +696,7 @@ KBUILD_CFLAGS += $(call cc-disable-warning, unused-but-set-variable)
 KBUILD_CFLAGS += $(call cc-disable-warning, unused-variable)
 KBUILD_CFLAGS += \
    -Wno-misleading-indentation \
-   -Wno-logical-not-parentheses 
+   -Wno-logical-not-parentheses
 endif
 
 ifdef CONFIG_FRAME_POINTER

@@ -693,6 +693,10 @@ else
 # This warning generated too much noise in a regular build.
 # Use make W=1 to enable this warning (see scripts/Makefile.build)
 KBUILD_CFLAGS += $(call cc-disable-warning, unused-but-set-variable)
+KBUILD_CFLAGS += $(call cc-disable-warning, unused-variable)
+KBUILD_CFLAGS += \
+   -Wno-misleading-indentation \
+   -Wno-logical-not-parentheses 
 endif
 
 ifdef CONFIG_FRAME_POINTER
